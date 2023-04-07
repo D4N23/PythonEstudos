@@ -3,8 +3,18 @@ print("********************************")
 print(" Bem vindo ao game de advinhação")
 print("********************************")
 
-numero_secreto = round(random.random() * 100)
-total_de_tentativa = 3
+numero_secreto = round(random.randrange(1, 100))
+total_de_tentativa = 0
+
+print("Qual nivel de dificuldade?")
+print("(1) Facil (2) Medio (3) Dificil")
+nivel = int(input("Defina o nivel:"))
+if(nivel == 1):
+    total_de_tentativa = 15
+elif (nivel == 2)
+    total_de_tentativa = 10
+elif (nivel == 3)
+    total_de_tentativa = 5
 
 for rodada in range(1,total_de_tentativa + 1):
 
